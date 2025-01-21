@@ -9,7 +9,7 @@ const slides = [
   },
   {
     image: "/slide2.jpg",
-    title: "Sustainable Agriculture",
+    title: "Sustainable Agriculture", 
     text: "Promoting eco-friendly practices for a greener future.",
   },
   {
@@ -56,4 +56,3 @@ export default function Slider() {
     </div>
   )
 }
-

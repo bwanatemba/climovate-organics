@@ -9,6 +9,10 @@ export default function Home() {
 
       <section className="py-5">
         <h2 className="text-center mb-4">About Us</h2>
+        <p className="lead text-center mb-4">
+            At Climovate Organics, we're revolutionizing sustainable agriculture through innovative organic solutions
+            that empower farmers and ensure environmental stewardship.
+          </p>
         <div className="row">
           <div className="col-md-6">
             <h3>Our Mission</h3>

@@ -13,7 +13,7 @@ export default function Header() {
         <div className="row align-items-center">
           <div className="col-auto">
             <Link href="/" className="d-flex align-items-center text-white text-decoration-none">
-              <Image src="/logo.svg" alt="Climovate Organics Logo" width={40} height={40} className="me-2" />
+              <Image src="/logo.png" alt="Climovate Organics Logo" width={40} height={40} className="me-2" />
               <span className="fs-4 fw-bold">Climovate Organics</span>
             </Link>
           </div>

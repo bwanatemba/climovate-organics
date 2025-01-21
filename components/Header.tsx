@@ -1,9 +1,14 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
 
 export default function Header() {
+  const pathname = usePathname()
+
   return (
-    <header className="sticky-top bg-success text-white py-3">
+    <header className="sticky-top custom-bg-primary text-white py-3">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-auto">
@@ -14,35 +19,51 @@ export default function Header() {
           </div>
           <nav className="col-auto ms-auto">
             <ul className="nav">
-              <li className="nav-item">
-                <Link href="/" className="nav-link text-white">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="/about" className="nav-link text-white">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="/contact" className="nav-link text-white">
-                  Contact
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="/privacy" className="nav-link text-white">
-                  Privacy
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="/terms" className="nav-link text-white">
-                  Terms
-                </Link>
-              </li>
+              {[
+                { href: "/", label: "Home" },
+                { href: "/about", label: "About" },
+                { href: "/contact", label: "Contact" },
+                { href: "/privacy", label: "Privacy" },
+                { href: "/terms", label: "Terms" },
+              ].map(({ href, label }) => (
+                <li key={href} className="nav-item">
+                  <Link href={href} className={`nav-link text-white ${pathname === href ? "active" : ""}`}>
+                    {label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
       </div>
+      <style jsx>{`
+        .nav-link {
+          position: relative;
+          transition: color 0.3s ease;
+        }
+        .nav-link:hover,
+        .nav-link.active {
+          color: var(--secondary-color) !important;
+        }
+        .nav-link::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: var(--secondary-color);
+          visibility: hidden;
+          transform: scaleX(0);
+          transition: all 0.3s ease-in-out;
+        }
+        .nav-link:hover::after,
+        .nav-link.active::after {
+          visibility: visible;
+          transform: scaleX(1);
+        }
+      `}</style>
     </header>
   )
 }
+

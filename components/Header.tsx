@@ -21,10 +21,8 @@ export default function Header() {
             <ul className="nav">
               {[
                 { href: "/", label: "Home" },
-                { href: "/about", label: "About" },
-                { href: "/contact", label: "Contact" },
-                { href: "/privacy", label: "Privacy" },
-                { href: "/terms", label: "Terms" },
+                { href: "/about", label: "About Us" },
+                { href: "/contact", label: "Contact Us" },
               ].map(({ href, label }) => (
                 <li key={href} className="nav-item">
                   <Link href={href} className={`nav-link text-white ${pathname === href ? "active" : ""}`}>

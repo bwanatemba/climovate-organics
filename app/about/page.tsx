@@ -5,7 +5,7 @@ export default function About() {
     <div className="container">
       <h1 className="display-4 text-center mb-5">About Climovate Organics</h1>
       <Image
-        src="/placeholder.svg"
+        src="/c_o_2.jpg"
         alt="About Climovate Organics"
         width={1200}
         height={600}

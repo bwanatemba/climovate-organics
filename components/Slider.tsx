@@ -5,17 +5,17 @@ import Image from "next/image"
 
 const slides = [
   {
-    image: "/slide1.jpg",
+    image: "/c_o_1.jpg",
     title: "Innovative Organic Solutions",
     text: "Empowering farmers with cutting-edge organic farming techniques.",
   },
   {
-    image: "/slide2.jpg",
+    image: "/c_o_3.jpg",
     title: "Sustainable Agriculture", 
     text: "Promoting eco-friendly practices for a greener future.",
   },
   {
-    image: "/slide3.jpg",
+    image: "/c_o_5.jpg",
     title: "Empowering Farmers",
     text: "Providing the tools and knowledge for successful organic farming.",
   },

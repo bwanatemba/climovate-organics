@@ -29,32 +29,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <style jsx>{`
-        .footer-link {
-          position: relative;
-          transition: color 0.3s ease;
-        }
-        .footer-link:hover {
-          color: var(--secondary-color) !important;
-          text-decoration: none;
-        }
-        .footer-link::after {
-          content: '';
-          position: absolute;
-          width: 100%;
-          height: 1px;
-          bottom: -2px;
-          left: 0;
-          background-color: var(--secondary-color);
-          visibility: hidden;
-          transform: scaleX(0);
-          transition: all 0.3s ease-in-out;
-        }
-        .footer-link:hover::after {
-          visibility: visible;
-          transform: scaleX(1);
-        }
-      `}</style>
     </footer>
   );
 }

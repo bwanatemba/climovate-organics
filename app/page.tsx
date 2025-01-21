@@ -4,20 +4,7 @@ import Image from "next/image"
 export default function Home() {
   return (
     <div className="container">
-      <section className="text-center py-5">
-        <h1 className="display-4 fw-bold">Welcome to Climovate Organics</h1>
-        <Image
-          src="/placeholder.svg"
-          alt="Climovate Organics Farm"
-          width={1200}
-          height={600}
-          className="img-fluid rounded shadow-lg my-4"
-        />
-        <p className="lead">
-          At Climovate Organics, we're revolutionizing sustainable agriculture through innovative organic solutions that
-          empower farmers and ensure environmental stewardship.
-        </p>
-      </section>
+      <Slider />
 
       <section className="py-5">
         <h2 className="text-center mb-4">About Us</h2>

@@ -36,34 +36,6 @@ export default function Header() {
           </nav>
         </div>
       </div>
-      <style jsx>{`
-        .nav-link {
-          position: relative;
-          transition: color 0.3s ease;
-        }
-        .nav-link:hover,
-        .nav-link.active {
-          color: var(--secondary-color) !important;
-        }
-        .nav-link::after {
-          content: '';
-          position: absolute;
-          width: 100%;
-          height: 2px;
-          bottom: 0;
-          left: 0;
-          background-color: var(--secondary-color);
-          visibility: hidden;
-          transform: scaleX(0);
-          transition: all 0.3s ease-in-out;
-        }
-        .nav-link:hover::after,
-        .nav-link.active::after {
-          visibility: visible;
-          transform: scaleX(1);
-        }
-      `}</style>
     </header>
   )
 }
-

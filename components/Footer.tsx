@@ -8,8 +8,8 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <p>&copy; 2024 Climovate Organics Ltd. All rights reserved.</p>
-            <p>Business Registration Number: BRS-009879 (Registered in Kenya)</p>
+            <p>&copy; 2025 Climovate Organics Ltd. All rights reserved.</p>
+            <p>Business Registration Number: BN-9PCGB657 (Registered in Kenya)</p>
           </div>
           <div className="col-md-6 text-md-end">
             <nav>
